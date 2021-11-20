@@ -12,7 +12,7 @@ type Manager struct {
 
 func NewManager() *Manager {
 	return &Manager{
-		keyValues: make(map[string]*internal.KeyValue, 0),
+		keyValues: make(map[string]*internal.KeyValue),
 	}
 }
 
