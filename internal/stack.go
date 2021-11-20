@@ -30,11 +30,11 @@ func (s *Stack) GetLastIndex() int {
 }
 
 func (s *Stack) Get() string {
-	index := s.GetLastIndex()
-
-	if index == 0 {
+	if len(s.Values) == 0 {
 		return ""
 	}
+
+	index := s.GetLastIndex()
 
 	return s.Values[index]
 }
